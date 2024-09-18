@@ -17,7 +17,7 @@
         <a href="#home">Strona główna</a>
 <a href="#about">O nas</a>
 <a href="#services">Usługi</a>
-<a href="#contact">Kontakt</a>
+<a href="kontakt.php">Kontakt</a>
     </div>
     <div class="search-container">
         <input type="text" placeholder="Wyszukaj..." class="search-input">
