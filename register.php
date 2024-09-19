@@ -17,7 +17,7 @@
         <input type="Email" id="Email" name="Email" required>
 
         <label for="password">Hasło:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="haslo" name="haslo" required>
         
         <button type="submit">Zarejestruj się</button>
     </form>
@@ -37,13 +37,13 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['Username'];
     $Email = $_POST['Email'];
-    $password = isset($_POST['password']) ? $_POST['password'] : null;
+    $password = isset($_POST['haslo']) ? $_POST['haslo'] : null;
 
   
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
  
-    $sql = "INSERT INTO konta (Username, Email, password) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO konta (Username, Email, haslo) VALUES (?, ?, ?)";
 
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $username, $Email, $hashed_password);

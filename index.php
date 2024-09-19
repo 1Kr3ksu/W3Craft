@@ -14,7 +14,7 @@
         <h1 class="title">W3Craft</h1>
         <div id="NAVI">
         <div class="nav-links">
-        <a href="#home">Strona główna</a>
+        <a href="index.php">Strona główna</a>
 <a href="#about">O nas</a>
 <a href="#services">Usługi</a>
 <a href="contact.php">Kontakt</a>
@@ -53,9 +53,7 @@
 
         <div class="user-controls-wrapper">
             <div class="actions">
-                
-                <button class="Log"> 
-                    Logowanie</button>
+            <?php require_once 'user-controls.php'; ?>  
             </div>
         </div>
     </div>
@@ -84,6 +82,7 @@
  
 </body>
 </html>
-<?php 
-    include "db_connection.php";
-    ?>
+<?php
+require_once 'check_login.php';
+
+?>

@@ -285,4 +285,58 @@ h1 {
     border: 1px solid #ffcaa6;
     background-color: #1976D2;
    }
- 
+   .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.contact {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dodatkowe kolory na przyciski */
+.contact-btn:nth-child(2) {
+    background-color: #E1306C;
+}
+
+.contact-btn:nth-child(2):hover {
+    background-color: #c72c5b;
+}
+
+.contact-btn:nth-child(3) {
+    background-color: #FF0000;
+}
+
+.contact-btn:nth-child(3):hover {
+    background-color: #cc0000;
+}

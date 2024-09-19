@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = $_POST['password'];
       
         // Przygotowanie zapytania
-        $stmt = $conn->prepare("SELECT id, username, password FROM konta WHERE username = ?");
+        $stmt = $conn->prepare("SELECT id, username, haslo FROM konta WHERE username = ?");
         if ($stmt) {
             // Bindowanie parametrów
             $stmt->bind_param("s", $username);

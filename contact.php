@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section class="navi">
+        
+        <h1 class="title">W3Craft</h1>
+        <div id="NAVI">
+        <div class="nav-links">
+        <a href="index.php">Strona główna</a>
+<a href="#about">O nas</a>
+<a href="#services">Usługi</a>
+<a href="contact.php">Kontakt</a>
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Wyszukaj..." class="search-input">
+        <button class="search-button">🔍</button>
+    </div>
+</div>
     <div class="contact-container">
     <div class="contact">
         <h1>Tutaj skontaktujesz się z nami :</h1>
