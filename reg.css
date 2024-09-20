@@ -4,10 +4,10 @@ html, body {
 }
 
 body {
-    display: flex; /* Dodane */
-    align-items: center; /* Dodane */
-    justify-content: center; /* Dodane */
-    min-height: 100vh; /* Dodane */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
     background-color: #0532ad;
     font-size: 16px;
     font-family: Arial;

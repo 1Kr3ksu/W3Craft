@@ -39,6 +39,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Email = $_POST['Email'];
     $password = isset($_POST['haslo']) ? $_POST['haslo'] : null;
 
+    if (!filter_var($Email, FILTER_VALIDATE_EMAIL)) {
+        echo "Niepoprawny format e-maila.";
+        exit;
+    }
+
+    $domain = substr(strrchr($Email, "@"), 1);
+    if (!checkdnsrr($domain, "MX")) {
+        echo "Domena e-maila nie istnieje.";
+        exit;
+    }
+
+    $checkEmailSql = "SELECT * FROM konta WHERE Email = ?";
+    $stmt = $conn->prepare($checkEmailSql);
+    $stmt->bind_param("s", $Email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        echo "Ten e-mail jest już zarejestrowany.";
+        exit;
+    }
   
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
