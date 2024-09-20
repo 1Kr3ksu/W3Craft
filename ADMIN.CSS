@@ -1,0 +1,127 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 242, 77);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+#NAVI {
+    width: 100%; 
+    background: #2196F3;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0.5rem 0; 
+    position: relative;
+    z-index: 10;
+    border: 2px solid black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#NAVI a {
+    display: flex;
+    align-items: center; 
+    color: white;
+    font-size: 1rem; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    border-radius: 5px; 
+}
+
+#NAVI a i {
+    margin-right: 8px; 
+    font-size: 1.5rem; /* Zwiększony rozmiar ikon */
+}
+
+#NAVI a:hover {
+    background-color: #1976D2; /* Zmiana koloru tła przy hover */
+    color: #fff; /* Kolor tekstu przy hover */
+}
+
+#NAVI a:active {
+    background-color: #0d47a1; /* Dodatkowy efekt przy kliknięciu */
+}
+main {
+    padding: 2rem;
+}
+
+/* Stylizacja sekcji statystyk */
+.dashboard-stats {
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumny */
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px); /* Początkowe przesunięcie w dół */
+    animation: bounce-in 0.6s ease forwards; /* Wywołanie animacji */
+}
+
+.stat-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.stat-item i {
+    font-size: 3rem;
+    color: #1976D2;
+    margin-top: 10px;
+}
+
+/* Definicja animacji "bounce-in" (bez opacity) */
+@keyframes bounce-in {
+    0% {
+        transform: translateY(30px); /* Start z przesunięcia */
+    }
+    60% {
+        transform: translateY(-10px); /* Lekki podskok do góry */
+    }
+    80% {
+        transform: translateY(5px); /* Mały odskok w dół */
+    }
+    100% {
+        transform: translateY(0); /* Powrót do normalnej pozycji */
+    }
+}
+
+/* Sekwencyjne opóźnienie dla każdego elementu */
+.stat-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stat-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stat-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stat-item:nth-child(4) {
+    animation-delay: 0.4s;
+}

@@ -8,14 +8,14 @@ body {
     align-items: center; 
     justify-content: center; 
     min-height: 100vh;
-    background-color: #0532ad;
+    background-color: rgb(0, 242, 77);
     font-size: 16px;
     font-family: Arial;
 }
 
 .register-container {
     background: rgb(0,138,255);
-    background: linear-gradient(184deg, rgba(0,138,255,1) 0%, rgba(188,0,255,0.8939775739397321) 100%);
+    background:#2196F3; 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -58,7 +58,7 @@ p {
 }
 .login-container {
     background: rgb(0,138,255);
-    background: linear-gradient(184deg, rgba(0,138,255,1) 0%, rgba(188,0,255,0.8939775739397321) 100%);
+    background: #2196F3; 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
