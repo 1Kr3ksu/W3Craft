@@ -9,7 +9,7 @@
 </head>
 <body>
 <section class="navi">
-
+<h1 class="title">W3Craft</h1>
     <div id="NAVI">
     <a href="index.php"><i class="fas fa-home"></i> Powrót</a>
 <a href="users.php"><i class="fas fa-users"></i> Zarządzanie użytkownikami</a>

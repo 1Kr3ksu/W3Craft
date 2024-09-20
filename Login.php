@@ -60,6 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (password_verify($password, $hashed_password)) {
                     header("location:index.php");
                     $_SESSION["user_id"] = $id;
+                    $_SESSION['is_admin'] = $user['is_admin'];
                     
                 } else {
                     echo "Nieprawidłowy login lub hasło.";

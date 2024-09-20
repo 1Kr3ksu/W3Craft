@@ -15,6 +15,7 @@
         <h1 class="title">W3Craft</h1>
         <div id="NAVI">
         <div class="nav-links">
+            
         <a href="index.php">Strona główna</a>
 <a href="#about">O nas</a>
 <a href="#services">Usługi</a>
@@ -85,5 +86,4 @@
 </html>
 <?php
 require_once 'check_login.php';
-
 ?>
