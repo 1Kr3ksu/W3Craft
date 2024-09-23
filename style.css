@@ -339,3 +339,56 @@ h1 {
 .contact-btn:nth-child(3):hover {
     background-color: #cc0000;
 }
+.support {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.support h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.support .faq {
+    margin-bottom: 20px;
+}
+
+.support .faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.support .contact-form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.support form {
+    display: flex;
+    flex-direction: column;
+}
+
+.support form label {
+    margin: 10px 0 5px;
+}
+
+.support form input, 
+.support form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.support form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

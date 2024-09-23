@@ -22,14 +22,15 @@
         <button class="search-button">🔍</button>
     </div>
 </div>
-    <div class="contact-container">
+<div class="contact-container">
     <div class="contact">
-        <h1>Tutaj skontaktujesz się z nami :</h1>
-        <a>E-mail</a>
-        <a>Instagram</a>
-        <a>Youtube</a> <!--Pomysł:alert pojawiający się po kliknięciu w yt o treści "Subskrybuj kanał! ; Nie zapomnij zasubskrybować kanału!" 
-        i kiedy zatwierdzimy ok to dopiero przekieruje do linku -->
+        <h1>Tutaj skontaktujesz się z nami:</h1>
+        <a href="mailto:example@example.com">E-mail</a>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        <a href="#" id="youtube-link">YouTube</a>
     </div>
+</div>
     </div>
+    <script src="alerts.js"></script>
 </body>
 </html>
