@@ -17,7 +17,7 @@
         <div class="nav-links">
             
         <a href="index.php">Strona główna</a>
-<a href="#about">O nas</a>
+<a href="about.php">O nas</a>
 <a href="#services">Usługi</a>
 <a href="contact.php">Kontakt</a>
     </div>
