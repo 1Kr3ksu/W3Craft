@@ -9,11 +9,12 @@
 <body>
 <section class="navi">
         
-        <h1 class="title">W3Craft</h1>
+<h1 class="title">W3Craft</h1>
         <div id="NAVI">
         <div class="nav-links">
+            
         <a href="index.php">Strona główna</a>
-<a href="#about">O nas</a>
+<a href="about.php">O nas</a>
 <a href="#services">Usługi</a>
 <a href="contact.php">Kontakt</a>
     </div>
